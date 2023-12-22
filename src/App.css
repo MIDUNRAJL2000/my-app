@@ -13,6 +13,53 @@
   }
 }
 
+.container {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+h1 {
+  color: #333;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+select,
+button {
+  padding: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.result {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
