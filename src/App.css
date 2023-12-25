@@ -61,27 +61,27 @@ p {
 .array-box {
   width: 40px;
   height: 40px;
-  border: 2px solid #3498db; /* Border color */
+  border: 2px solid #3498db;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 5px;
   font-size: 16px;
   font-weight: bold;
-  color: #3498db; /* Text color */
-  background-color: #ecf0f1; /* Background color */
+  color: #3498db;
+  background-color: #ecf0f1;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .array-box.active {
-  background-color: #e74c3c; /* Active background color */
-  color: #fff; /* Active text color */
+  background-color: #e74c3c;
+  color: #fff;
 }
 
 .array-box:hover {
-  background-color: #2980b9; /* Hover background color */
-  color: #fff; /* Hover text color */
+  background-color: #2980b9;
+  color: #fff;
 }
 
 .App-header {
