@@ -13,21 +13,8 @@
   }
 }
 
-.container {
-  text-align: center;
-  margin: 50px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  max-width: 400px;
-}
-
 h1 {
   color: #333;
-}
-
-.input-container {
-  margin-bottom: 20px;
 }
 
 label {
@@ -48,16 +35,53 @@ button {
   cursor: pointer;
 }
 
-.result {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
-}
-
 p {
   margin: 0;
   font-weight: bold;
   color: #333;
+}
+.container {
+  text-align: center;
+  margin: 50px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.visualization {
+  display: flex;
+  justify-content: center;
+}
+
+.array-box {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #3498db; /* Border color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3498db; /* Text color */
+  background-color: #ecf0f1; /* Background color */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.array-box.active {
+  background-color: #e74c3c; /* Active background color */
+  color: #fff; /* Active text color */
+}
+
+.array-box:hover {
+  background-color: #2980b9; /* Hover background color */
+  color: #fff; /* Hover text color */
 }
 
 .App-header {
