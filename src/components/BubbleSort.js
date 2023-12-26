@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import BubbleVisualization from "./BubbleVisualization";
 
-function BubbleSort() {
+const BubbleSort = () => {
   const [inputArray, setInputArray] = useState([]);
   const [sortOrder, setSortOrder] = useState("ascending");
   const [sortedArray, setSortedArray] = useState([]);
@@ -49,7 +50,7 @@ function BubbleSort() {
       <h1>Bubble sort</h1>
       <div className="input-container">
         <label>
-          Enter the array
+          Enter the array:
           <input
             type="text"
             onChange={(e) => {
@@ -71,20 +72,18 @@ function BubbleSort() {
 
       <div className="result">
         <h2>Sorted Array:</h2>
-        <div className="visualization">
-          {visualSteps.length > 0 &&
-            visualSteps[currentStep]?.map((num, index) => (
-              <div
-                key={index}
-                className={`array-box ${index === currentStep ? "active" : ""}`}
-              >
-                {num}
-              </div>
-            ))}
+        <BubbleVisualization
+          visualSteps={visualSteps}
+          currentStep={currentStep}
+        />
+        <div className="sorted-array">
+          {sortedArray.map((num, index) => (
+            <span key={index}>{num} </span>
+          ))}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default BubbleSort;
