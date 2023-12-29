@@ -7,6 +7,7 @@ const BubbleVisualization = ({ visualSteps, currentStep }) => (
         <div
           key={index}
           className={`array-box ${index === currentStep ? "active" : ""}`}
+          style={{ height: `${num * 10}px` }}
         >
           {num}
         </div>
